@@ -17,18 +17,41 @@
 
                 <a class="navbar-brand" href="index.html">
                     <img src="images/pie.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                        Bethany's Pie Shop</a>
+                    Bethany's Pie Shop</a>
+
+                <!-- Toggle button for when not enough space -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <!-- collapsible elements under this div -->
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    
+
                     <ul class="nav navbar-nav mr-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
 
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="allpies.html">Pies</a>
+                        </li> -->
+
+                        <li class="nav-item dropdown active">
+
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pies
+                            </a>
+
+                            <!-- Dropdown links -->
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="fruitpies.html">Fruit pies</a>
+                                <a class="dropdown-item" href="cheesecakes.html">Cheese cakes</a>
+                                <a class="dropdown-item" href="seasonalpies.html">Seasonal pies</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="allpies.html">All pies</a>
+                            </div>
                         </li>
 
                         <li class="nav-item">
@@ -126,33 +149,34 @@
             </div>
 
             <div class="p-4 mb-3 mt-2 bg-light rounded border border-primary">
-                <h4>A quote from Bethany</h4>
+                <h4>A quote from Bethany:</h4>
                 <p class="mb-0 font-italic">My recipes have been in our family for generations. We hope you enjoy our pies! - Bethany</p>
             </div>
+
 
             <h3 class="display-5 my-4">Other customers also bought...</h3>
 
             <div class="row">
                 <div class="col-md-3 col-sm-6">
-                    <a href="applepie.html">
+                    <a href="underconstruction.html">
                         <img class="img-fluid" src="images/products/strawberrypiesmall.jpg" alt="">
                     </a>
                 </div>
 
                 <div class="col-md-3 col-sm-6">
-                    <a href="applepie.html">
+                    <a href="underconstruction.html">
                         <img class="img-fluid" src="images/products/rhubarbpiesmall.jpg" alt="">
                     </a>
                 </div>
 
                 <div class="col-md-3 col-sm-6">
-                    <a href="applepie.html">
+                    <a href="underconstruction.html">
                         <img class="img-fluid" src="images/products/peachpiesmall.jpg" alt="">
                     </a>
                 </div>
 
                 <div class="col-md-3 col-sm-6">
-                    <a href="applepie.html">
+                    <a href="underconstruction.html">
                         <img class="img-fluid" src="images/products/cranberrypiesmall.jpg" alt="">
                     </a>
                 </div>
@@ -174,7 +198,7 @@
                 </div>
 
                 <div class="modal-body">
-                    <p>Apple pie was added to your basket</p>
+                    <p>Apple pie was added to your basket.</p>
                 </div>
 
                 <div class="modal-footer">
