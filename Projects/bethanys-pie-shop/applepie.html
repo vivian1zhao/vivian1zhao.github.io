@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-primary">
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/pie.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    Bethany's Pie Shop</a>
+
+                <!-- Toggle button for when not enough space -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- collapsible elements under this div -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="allpies.html">Pies</a>
+                        </li> -->
+
+                        <li class="nav-item dropdown active">
+
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pies
+                            </a>
+
+                            <!-- Dropdown links -->
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="fruitpies.html">Fruit pies</a>
+                                <a class="dropdown-item" href="cheesecakes.html">Cheese cakes</a>
+                                <a class="dropdown-item" href="seasonalpies.html">Seasonal pies</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="allpies.html">All pies</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="order.html">Order</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main role="main">
+
+        <!-- jumbotron part -->
+        <div class="jumbotron jumbotron-detail-apple-pie">
+            <div class="container">
+                <h1 class="display-3 text-white">Apple pie</h1>
+            </div>
+        </div>
+        
+        <!-- main container part -->
+        <div class="container">
+            
+            <h1> Apple pie 
+                <small class="text-muted">Our famous, number-one selling pie.</small>
+            </h1>
+            
+            <!-- <div class="alert alert-success">
+                <strong>Success!</strong> Apple pie was added to your shopping cart
+            </div> -->
+
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <img src="images/products/applepie.jpg" class="rounded-lg img-fluid" alt="Image of apple pie">
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="mb-3 text-capitalize">About this pie</h3>
+                    <p class="text-justify">Sweet ice cream jelly beans lemon drops. Pastry toffee fruitcake gingerbread jelly-o.
+                        Lollipop sesame snaps muffin. Macaroon halvah marshmallow sesame snaps sugar plum dragée.
+                        Wafer pudding sesame snaps tootsie roll sesame snaps cake chupa chups jelly beans.</p>
+                    <h3 class="my-3">Ingredients</h3>
+                    <ul>
+                        <li>Apple</li>
+                        <li>Sugar</li>
+                        <li>Eggs</li>
+                        <li>Milk</li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <strong>$14.95</strong>
+                        </div>
+                        <div class="col-md-8">
+                            <a type="button" href="shoppingbasket.html" data-toggle="modal" data-target="#addToBasketModal"
+                                class="btn btn-info float-right"> 
+                                Add to cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="table-responsive p-4">
+                    <table class="table table-striped table-hover table-bordered">
+                        <thead> <!-- table headers -->
+                            <tr>
+                                <th>Ingredients</th>
+                                <th>Risk</th>
+                                <th>Percentage</th>
+                            </tr>
+                        </thead>
+
+                        <tbody> <!-- body of table -->
+                            <tr>
+                                <th>Apple</th>
+                                <th>Yes</th>
+                                <th>50%</th>
+                            </tr>
+                            <tr>
+                                <td>Eggs</td>
+                                <td>Yes</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td>Nuts</td>
+                                <td>Maybe </td>
+                                <td>&lt;0.1%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="p-4 mb-3 mt-2 bg-light rounded border border-primary">
+                <h4>A quote from Bethany:</h4>
+                <p class="mb-0 font-italic">My recipes have been in our family for generations. We hope you enjoy our pies! - Bethany</p>
+            </div>
+
+
+            <h3 class="display-5 my-4">Other customers also bought...</h3>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <a><img class="img-fluid" src="images/products/strawberrypiesmall.jpg" alt=""></a>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <a><img class="img-fluid" src="images/products/rhubarbpiesmall.jpg" alt=""></a>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <a><img class="img-fluid" src="images/products/peachpiesmall.jpg" alt=""></a>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <a><img class="img-fluid" src="images/products/cranberrypiesmall.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Success dialogue -->
+    <div class="modal fade" tabindex="-1" id="addToBasketModal" role="dialog">
+        <div class="modal-dialog">
+            
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Bethany's Pie Shop</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <p>Apple pie was added to your basket.</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Continue shopping</button>
+                    <button type="button" class="btn btn-primary">View basket</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- JQuery reference -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+ 
+</body>
+
+</html>
