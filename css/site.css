@@ -1,73 +1,33 @@
 body {
     /* padding-top: 5rem;
     padding-bottom: 5rem; */
-    background: rgb(119,182,234);
-    background: linear-gradient(-20deg, rgba(119,182,234,1) 0%, rgba(255,247,219,1) 50%, rgba(253,232,233,1) 100%);
+    background: #77b6ea;
+    background: linear-gradient(-20deg, #77b6ea 0%, #fff7db 50%, #fde8e9 100%);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh !important;
     background-attachment: fixed;
 }
 
-/* h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     font-family: the-seasons, sans-serif;
     font-style: normal;
-    font-weight: 300; 
-} */
+    font-weight: 400; 
+    color: #26555E !important;
+}
 
 p {
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family: "open-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 180%;
+    color: #26555E !important;
 }
 
-
-.bg-primary {
-    background-color: #a593c2 !important;
-}
-
-.jumbotron-detail-apple-pie {
-    background: url('../images/products/applepie.jpg') no-repeat fixed;
-}
-
-.jumbotron-other {
-    background: url('../images/carousel3.jpg') no-repeat fixed;
-}
-
-.jumbotron {
-    height: 40vh;
-    background-size: cover;
-}
-
-
-.carousel {
-    margin-bottom: 4rem;
-}
-
-.carousel-caption {
-    bottom: 3rem;
-    z-index: 10;
-}
-
-.carousel-item {
-    height: 32rem;
-    max-width: 100vw;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.welcome-carousel-image1 {
-    box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.3);
-    background-image: url('../images/carousel1.jpg');
-}
-
-.welcome-carousel-image2 {
-    box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.3);
-    background-image: url('../images/carousel2.jpg');
-}
-
-.welcome-carousel-image3 {
-    box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.3);
-    background-image: url('../images/carousel3.jpg');
+.nav-font {
+    font-family: "open-sans", sans-serif;
+    font-style: normal;
+    color: #26555E !important;
 }
 
 .embed-responsive {
@@ -77,3 +37,8 @@ p {
     padding: 0;
     overflow: hidden;
 }
+
+::selection {
+    background: #26555E !important;
+    color: #FDE8E9;
+  }
