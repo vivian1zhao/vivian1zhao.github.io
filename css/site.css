@@ -1,8 +1,9 @@
 body {
     /* padding-top: 5rem;
     padding-bottom: 5rem; */
-    background: #77b6ea;
-    background: linear-gradient(-20deg, #77b6ea 0%, #fff7db 50%, #fde8e9 100%);
+    background-image: url('/images/blended-background.jpg');
+    /* background: #77b6ea;
+    background: linear-gradient(-20deg, #77b6ea 0%, #fff7db 50%, #fde8e9 100%); */
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh !important;
@@ -28,6 +29,10 @@ p {
     font-family: "open-sans", sans-serif;
     font-style: normal;
     color: #26555E !important;
+}
+
+.bg-opaque {
+    background-color: rgb(255, 255, 255, 0.5);
 }
 
 .embed-responsive {
