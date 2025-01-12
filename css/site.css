@@ -7,6 +7,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh !important;
+    margin: 0;
+    padding: 0;
     background-attachment: fixed;
 }
 
@@ -46,4 +48,26 @@ p {
 ::selection {
     background: #26555E !important;
     color: #FDE8E9;
-  }
+}
+
+.no-margin {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.my-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex: 1;
+    padding: 0;
+}
+
+footer {
+    background: #ccc;
+    padding: 10px 20px;
+    text-align: center;
+}
