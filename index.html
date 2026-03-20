@@ -10,146 +10,11 @@
     
     <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="https://use.typekit.net/enq5uxg.css">
-    <link rel="icon" type="image/png" href="images/myIcon.png">
+    <link rel="icon" type="image/png" href="images/favIcon.png">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
-            /* background: linear-gradient(135deg, #e3f0ff 0%, #f8fafc 100%); */
-            font-size: 15px; /* Smaller base font */
-        }
-        body {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        .my-container {
-            flex: 1 0 auto;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        .content {
-            flex: 1 0 auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .navbar {
-            background: rgba(255,255,255,0.98) !important;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-            font-size: 0.95rem; /* Smaller navbar font */
-        }
-        .navbar-brand img {
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-        .nav-link {
-            font-weight: 500;
-            color: #1a237e !important;
-            transition: color 0.2s;
-            font-size: 0.97rem; /* Smaller nav links */
-        }
-        .nav-link:hover, .nav-link.active {
-            color: #1976d2 !important;
-        }
-        main.my-5 {
-            flex: 1 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-top: 0 !important;
-            padding-bottom: 0 !important;
-        }
-        .profile-card {
-            background: #fff;
-            border-radius: 24px;
-            box-shadow: 0 4px 32px rgba(30, 64, 175, 0.10);
-            padding: 2rem 1.5rem;
-            margin: 0 auto;
-            max-width: 900px;
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-        .profile-img {
-            max-width: 180px;
-            border-radius: 50%;
-            box-shadow: 0 2px 16px rgba(25, 118, 210, 0.10);
-            border: 5px solid #e3f0ff;
-        }
-        .profile-info {
-            flex: 1;
-            padding-left: 2rem;
-        }
-        .profile-info h3 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #1a237e;
-            margin-bottom: 0.7rem;
-        }
-        .profile-info p {
-            font-size: 1rem;
-            color: #374151;
-            margin-bottom: 0;
-        }
-        @media (max-width: 900px) {
-            .profile-card {
-                flex-direction: column;
-                text-align: center;
-                padding: 1.5rem 0.7rem;
-            }
-            .profile-info {
-                padding-left: 0;
-                padding-top: 1.2rem;
-            }
-        }
-        footer {
-            flex-shrink: 0;
-            width: 100%;
-            background: rgba(255,255,255,0.97);
-            box-shadow: 0 -1px 8px rgba(0,0,0,0.04);
-            font-size: 0.95rem; /* Smaller footer font */
-        }
-        .footer-btn {
-            border-radius: 50%;
-            width: 38px;
-            height: 38px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.1rem;
-            margin: 0 0.18rem;
-            background: #1976d2;
-            color: #fff !important;
-            transition: background 0.2s, box-shadow 0.2s;
-            box-shadow: 0 2px 8px rgba(25, 118, 210, 0.10);
-        }
-        .footer-btn:hover {
-            background: #1565c0;
-            color: #fff !important;
-        }
-        .footer-text {
-            color: #374151;
-            font-size: 0.98rem;
-            margin-bottom: 0.5rem;
-        }
-        @media (max-width: 768px) {
-            main.my-5 .container {
-                padding: 0 5px;
-            }
-            .profile-card {
-                padding: 1.1rem 0.3rem;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -157,32 +22,43 @@
         <div class="content">
             <header>
                 <!-- Navbar -->
-                <nav class="navbar navbar-expand-lg navbar-light">
+                <nav class="navbar navbar-expand-lg navbar-light bg-opaque">
                     <div class="container-fluid">
                         <!-- Navbar brand -->
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="index.html"> <!-- target="_blank" for new tab-->
                             <img src="images/VZ-Logo-revised.png" width="32" height="32"
                                 class="d-inline-block align-top" alt="VZ Logo"
                                 loading="lazy" />
                         </a>
+
+                        <!-- Toggle button for when not enough space -->
                         <button class="navbar-toggler" type="button" data-mdb-collapse-init
                             data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
                             aria-label="Toggle navigation">
                             <i class="fas fa-bars"></i>
                         </button>
+
+                        <!-- Collapsible elements under this div -->
                         <div class="collapse navbar-collapse" id="navbarExample01">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item active">
                                     <a class="nav-link nav-font" aria-current="page" href="index.html">Home</a>
                                 </li>
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link nav-font" href="about.html">About</a>
+                                </li> -->
                                 <li class="nav-item">
                                     <a class="nav-link nav-font" href="projects.html">Projects</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link nav-font" href="resume.html">Resume</a>
                                 </li>
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link nav-font" href="contact.html">Contact</a>
+                                </li> -->
                             </ul>
                             <ul class="navbar-nav d-flex flex-row">
+                                <!-- Icons -->
                                 <li class="nav-item me-3 me-lg-0">
                                     <a class="nav-link" href="https://www.linkedin.com/in/vivian-zhao-a69430264/"
                                         rel="nofollow" target="_blank">
@@ -210,10 +86,11 @@
                                 <img src="images/square-headshot.jpg" class="profile-img" alt="Vivian Zhao Headshot" />
                             </div>
                             <div class="profile-info">
-                                <h3>Hi, I'm Vivian Zhao.</h3>
+                                <h2><strong>Hi, I'm Vivian!</strong><h2>
                                 <p>
-                                    I'm a rising senior at Rutgers University–New Brunswick pursuing a double major
-                                    in Computer Science and Data Science.
+                                    I’m a Data Science and Computer Science student in the Rutgers Honors College, 
+                                    passionate about applying data, machine learning, and thoughtful analysis to 
+                                    problems that affect real people.
                                 </p>
                             </div>
                         </div>
@@ -225,7 +102,7 @@
         <!--Footer-->
         <footer class="bg-opaque text-lg-start">
             <div class="text-center py-4 align-items-center">
-                <p class="footer-text">Thank you for your time!</p>
+                <p class="footer-text">Let's connect!</p>
                 <a href="https://www.linkedin.com/in/vivian-zhao-a69430264/" class="footer-btn" role="button"
                     rel="nofollow" data-mdb-ripple-init target="_blank" aria-label="LinkedIn">
                     <i class="fab fa-linkedin"></i>
