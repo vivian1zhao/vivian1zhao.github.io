@@ -3,7 +3,6 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
-    /* background: linear-gradient(135deg, #e3f0ff 0%, #f8fafc 100%); */
     font-size: 15px; /* Smaller base font */
 }
 
@@ -117,7 +116,7 @@ main.my-5 {
     max-width: 900px;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+ 00   flex-wrap: wrap;
     align-items: center;
 }
 .profile-img {
@@ -140,6 +139,73 @@ main.my-5 {
     font-size: 1rem;
     color: #374151;
     margin-bottom: 0;
+}
+
+/* Projects Container & Items */
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.project-item {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 4px 32px rgba(30, 64, 175, 0.10);
+}
+
+.project-item-image {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-item-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* For gradient blur into text */
+/* .project-item-image::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15) 70%, rgba(255, 255, 255, 0.15));
+    pointer-events: none;
+} */
+
+.project-item-content {
+    padding: 2rem 1.5rem;
+}
+
+.project-item-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-item-content p {
+    margin-bottom: 1.5rem;
+}
+
+.project-item-content .btn {
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 900px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+    .project-item-content {
+        padding: 1.5rem 1rem;
+    }
 }
 @media (max-width: 900px) {
     .profile-card {
