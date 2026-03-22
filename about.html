@@ -20,126 +20,134 @@
 </head>
 
 <body>
-    <div class="my-container">
-        <div class="content">
-            <header>
-                <!-- Navbar -->
-                <nav class="navbar navbar-expand-lg navbar-light bg-opaque">
-                    <div class="container-fluid">
-                        <!-- Navbar brand -->
-                        <a class="navbar-brand" href="index.html"> <!-- target="_blank" for new tab-->
-                            <img src="images/VZ-Logo-revised.png" width="32" height="32"
-                                class="d-inline-block align-top" alt="VZ Logo"
-                                loading="lazy" />
-                        </a>
+    <!-- Animated circle background -->
+    <section class="hero">
+        <canvas id="canvas" width="500" height="500"></canvas>
 
-                        <!-- Toggle button for when not enough space -->
-                        <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarExample01"
-                            aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-bars"></i>
-                        </button>
+        <div class="my-container">
+            <div class="content">
+                <header>
+                    <!-- Navbar -->
+                    <nav class="navbar navbar-expand-lg navbar-light bg-opaque">
+                        <div class="container-fluid">
+                            <!-- Navbar brand -->
+                            <a class="navbar-brand" href="index.html"> <!-- target="_blank" for new tab-->
+                                <img src="images/VZ-Logo-revised.png" width="32" height="32"
+                                    class="d-inline-block align-top" alt="VZ Logo"
+                                    loading="lazy" />
+                            </a>
 
-                        <!-- Collapsible elements under this div -->
-                        <div class="collapse navbar-collapse" id="navbarExample01">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link nav-font" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link nav-font" aria-current="page" href="about.html">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link nav-font" href="projects.html">Projects</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link nav-font" href="resume.html">Resume</a>
-                                </li>
-                                <!-- <li class="nav-item">
-                                    <a class="nav-link nav-font" href="contact.html">Contact</a>
-                                </li> -->
-                            </ul>
-                
-                            <ul class="navbar-nav d-flex flex-row">
-                                <!-- Icons -->
-                                <li class="nav-item me-3 me-lg-0">
-                                    <a class="nav-link" href="https://www.linkedin.com/in/vivian-zhao-a69430264/" rel="nofollow" target="_blank">
-                                        <i class="fab fa-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li class="nav-item me-3 me-lg-0">
-                                    <a class="nav-link" href="https://github.com/vivian1zhao" rel="nofollow" target="_blank">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </li>
-                            </ul>
+                            <!-- Toggle button for when not enough space -->
+                            <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarExample01"
+                                aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                            </button>
+
+                            <!-- Collapsible elements under this div -->
+                            <div class="collapse navbar-collapse" id="navbarExample01">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-font" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link nav-font" aria-current="page" href="about.html">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-font" href="projects.html">Projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-font" href="resume.html">Resume</a>
+                                    </li>
+                                    <!-- <li class="nav-item">
+                                        <a class="nav-link nav-font" href="contact.html">Contact</a>
+                                    </li> -->
+                                </ul>
+                    
+                                <ul class="navbar-nav d-flex flex-row">
+                                    <!-- Icons -->
+                                    <li class="nav-item me-3 me-lg-0">
+                                        <a class="nav-link" href="https://www.linkedin.com/in/vivian-zhao-a69430264/" rel="nofollow" target="_blank">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item me-3 me-lg-0">
+                                        <a class="nav-link" href="https://github.com/vivian1zhao" rel="nofollow" target="_blank">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </nav>
-                <!-- Navbar -->
-            </header>
+                    </nav>
+                    <!-- Navbar -->
+                </header>
 
-            <main class="my-5">
-                <div class="container">
-                    <section class="text-center text-md-start">
-                        <h1 class="mb-4"><strong>About me</strong></h1>
+                <main class="my-5">
+                    <div class="container">
+                        <section class="text-center text-md-start">
+                            <h1 class="mb-4"><strong>About me</strong></h1>
 
-                        <div class="row">
-                            <div class="col-md-4 mb-4">
-                                <div class="bg-image hover-overlay shadow-1-strong rounded-circle" data-mdb-ripple-init
-                                    data-mdb-ripple-color="light">
-                                    <img src="images/square-headshot.jpg" class="img-fluid rounded-circle"/>
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="bg-image hover-overlay shadow-1-strong rounded-circle" data-mdb-ripple-init
+                                        data-mdb-ripple-color="light">
+                                        <img src="images/square-headshot.jpg" class="img-fluid rounded-circle"/>
+                                    </div>
+                                </div>
+                
+                                <div class="col-md-8 mb-4 px-5">
+                                    <h3 class="mt-5 mb-4"><strong>My name is Vivian Zhao.</strong></h3>
+                                    <p>
+                                        <strong>Who I am:</strong> I’m a senior at Rutgers University double majoring in Data Science 
+                                        and Computer Science. Much of my work centers on applied analytics and interpretable 
+                                        machine learning, and I’ve had the chance to explore that through roles that all 
+                                        tie back to one theme: using data to make complex things clearer and more human-centered.
+                                        <!-- <br>
+                                        I’ve built predictive models with interpretable algorithms at DIMACS, developed 
+                                        AI-based tools for biomedical image analysis at a research lab in France, and worked 
+                                        hands-on as an IT Consultant helping thousands of students troubleshoot tech issues 
+                                        in real time. Across these experiences, I’ve grown into someone who cares deeply 
+                                        about accuracy, clarity, and the real people affected by technology. -->
+                                    </p>
+                                    <p>
+                                        <strong>What excites me:</strong> Turning messy, ambiguous data problems into clean, 
+                                        meaningful insights. I love figuring out why something isn’t working, building models 
+                                        or systems that actually help people, and approaching problems with both analytical 
+                                        and empathetic thinking. Collaboration, asking better questions, and clear 
+                                        communication shape how I work.
+                                    </p>
+                                    <p>
+                                        <strong>A little more about me:</strong> I’m someone who learns quickly and loves learning 
+                                        broadly, whether it’s about music, design, psychology, photography, or the ways technology 
+                                        shapes everyday life. I enjoy exploring new perspectives, picking up creative hobbies, and 
+                                        finding the intersection between the analytical and the artistic.
+                                    </p>
                                 </div>
                             </div>
-            
-                            <div class="col-md-8 mb-4 px-5">
-                                <h3 class="mt-5 mb-4"><strong>My name is Vivian Zhao.</strong></h3>
-                                <p>
-                                    <strong>Who I am:</strong> I’m a senior at Rutgers University double majoring in Data Science 
-                                    and Computer Science. Much of my work centers on applied analytics and interpretable 
-                                    machine learning, and I’ve had the chance to explore that through roles that all 
-                                    tie back to one theme: using data to make complex things clearer and more human-centered.
-                                    <!-- <br>
-                                    I’ve built predictive models with interpretable algorithms at DIMACS, developed 
-                                    AI-based tools for biomedical image analysis at a research lab in France, and worked 
-                                    hands-on as an IT Consultant helping thousands of students troubleshoot tech issues 
-                                    in real time. Across these experiences, I’ve grown into someone who cares deeply 
-                                    about accuracy, clarity, and the real people affected by technology. -->
-                                </p>
-                                <p>
-                                    <strong>What excites me:</strong> Turning messy, ambiguous data problems into clean, 
-                                    meaningful insights. I love figuring out why something isn’t working, building models 
-                                    or systems that actually help people, and approaching problems with both analytical 
-                                    and empathetic thinking. Collaboration, asking better questions, and clear 
-                                    communication shape how I work.
-                                </p>
-                                <p>
-                                    <strong>A little more about me:</strong> I’m someone who learns quickly and loves learning 
-                                    broadly, whether it’s about music, design, psychology, photography, or the ways technology 
-                                    shapes everyday life. I enjoy exploring new perspectives, picking up creative hobbies, and 
-                                    finding the intersection between the analytical and the artistic.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </main>
-        </div>
-
-        <!--Footer-->
-        <footer class="bg-opaque text-lg-start">
-            <div class="text-center py-4 align-items-center">
-                <p class="footer-text">Let's connect!</p>
-                <a href="https://www.linkedin.com/in/vivian-zhao-a69430264/" class="footer-btn" role="button"
-                    rel="nofollow" data-mdb-ripple-init target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/vivian1zhao" class="footer-btn" role="button" rel="nofollow"
-                    data-mdb-ripple-init target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
+                        </section>
+                    </div>
+                </main>
             </div>
-        </footer>
-    </div>
+
+            <!--Footer-->
+            <footer class="bg-opaque text-lg-start">
+                <div class="text-center py-4 align-items-center">
+                    <p class="footer-text">Let's connect!</p>
+                    <a href="https://www.linkedin.com/in/vivian-zhao-a69430264/" class="footer-btn" role="button"
+                        rel="nofollow" data-mdb-ripple-init target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/vivian1zhao" class="footer-btn" role="button" rel="nofollow"
+                        data-mdb-ripple-init target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <!-- For blurred background: -->
+    <script src="js/main.js"></script> 
 
     <!-- JQuery reference -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

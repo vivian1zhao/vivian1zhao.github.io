@@ -18,193 +18,202 @@
 </head>
 
 <body>
-    <div class="my-container">
-        <div class="content">
-            <header>
-                <!-- Navbar -->
-                <nav class="navbar navbar-expand-lg navbar-light bg-opaque">
-                    <div class="container-fluid">
-                        <!-- Navbar brand -->
-                        <a class="navbar-brand" href="index.html"> <!-- target="_blank" for new tab-->
-                            <img src="images/VZ-Logo-revised.png" width="32" height="32"
-                                class="d-inline-block align-top" alt="VZ Logo"
-                                loading="lazy" />
-                        </a>
+    <!-- Animated circle background -->
+    <section class="hero">
+        <canvas id="canvas" width="500" height="500"></canvas>
 
-                        <!-- Toggle button for when not enough space -->
-                        <button class="navbar-toggler" type="button" data-mdb-collapse-init
-                            data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <i class="fas fa-bars"></i>
-                        </button>
+        <div class="my-container">
+            <div class="content">
+                <header>
+                    <!-- Navbar -->
+                    <nav class="navbar navbar-expand-lg navbar-light bg-opaque">
+                        <div class="container-fluid">
+                            <!-- Navbar brand -->
+                            <a class="navbar-brand" href="index.html"> <!-- target="_blank" for new tab-->
+                                <img src="images/VZ-Logo-revised.png" width="32" height="32"
+                                    class="d-inline-block align-top" alt="VZ Logo"
+                                    loading="lazy" />
+                            </a>
 
-                        <!-- Collapsible elements under this div -->
-                        <div class="collapse navbar-collapse" id="navbarExample01">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link nav-font" aria-current="page" href="index.html">Home</a>
-                                </li>
-                                <!-- <li class="nav-item">
-                                    <a class="nav-link nav-font" href="about.html">About</a>
-                                </li> -->
-                                <li class="nav-item active">
-                                    <a class="nav-link nav-font" href="projects.html">Projects</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link nav-font" href="resume.html">Resume</a>
-                                </li>
-                                <!-- <li class="nav-item">
-                                    <a class="nav-link nav-font" href="contact.html">Contact</a>
-                                </li> -->
-                            </ul>
-                            <ul class="navbar-nav d-flex flex-row">
-                                <!-- Icons -->
-                                <li class="nav-item me-3 me-lg-0">
-                                    <a class="nav-link" href="https://www.linkedin.com/in/vivian-zhao-a69430264/"
-                                        rel="nofollow" target="_blank">
-                                        <i class="fab fa-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li class="nav-item me-3 me-lg-0">
-                                    <a class="nav-link" href="https://github.com/vivian1zhao" rel="nofollow"
-                                        target="_blank">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <!-- Navbar -->
-            </header>
+                            <!-- Toggle button for when not enough space -->
+                            <button class="navbar-toggler" type="button" data-mdb-collapse-init
+                                data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                            </button>
 
-            <!--Main layout-->
-            <main class="my-5">
-                <div class="container">
-                    <section class="text-center text-md-start">
-                        <h1 class="mb-5"><strong>My Projects</strong></h1>
-            
-                        <!-- Post -->
-                        <div class="row">
-                            <div class="col-md-4 mb-4">
-                                <div class="bg-image hover-overlay shadow-1-strong rounded" data-mdb-ripple-init
-                                    data-mdb-ripple-color="light">
-                                    <img src="images/user-mgmt-react.png" class="img-fluid"/>
-                                    <a href="./Projects/user-management-app/dist/index.html" rel="nofollow" target="_blank">
-                                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                                    </a>
-                                </div>
-                            </div>
-            
-                            <div class="col-md-8 mb-4">
-                                <h3 class="mt-2"><strong>User Managment App</strong></h3>
-                                <p>
-                                    A responsive and mobile-first user management app built with React and Material UI. 
-                                    This app allows CRUD operations on user data, including creating, reading, updating, and deleting users.
-                                    It features a user-friendly interface and is designed to be intuitive and easy to navigate.
-                                </p>
-                                <a href="./Projects/user-management-app/dist/index.html" 
-                                    class="btn btn-primary" data-mdb-ripple-init rel="nofollow" target="_blank">View
-                                </a>
-                                <!-- <button type="button" class="btn btn-primary" data-mdb-ripple-init>Read</button> -->
+                            <!-- Collapsible elements under this div -->
+                            <div class="collapse navbar-collapse" id="navbarExample01">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-font" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                    <!-- <li class="nav-item">
+                                        <a class="nav-link nav-font" href="about.html">About</a>
+                                    </li> -->
+                                    <li class="nav-item active">
+                                        <a class="nav-link nav-font" href="projects.html">Projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-font" href="resume.html">Resume</a>
+                                    </li>
+                                    <!-- <li class="nav-item">
+                                        <a class="nav-link nav-font" href="contact.html">Contact</a>
+                                    </li> -->
+                                </ul>
+                                <ul class="navbar-nav d-flex flex-row">
+                                    <!-- Icons -->
+                                    <li class="nav-item me-3 me-lg-0">
+                                        <a class="nav-link" href="https://www.linkedin.com/in/vivian-zhao-a69430264/"
+                                            rel="nofollow" target="_blank">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item me-3 me-lg-0">
+                                        <a class="nav-link" href="https://github.com/vivian1zhao" rel="nofollow"
+                                            target="_blank">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
+                    </nav>
+                    <!-- Navbar -->
+                </header>
 
-                        <!-- Post -->
-                        <!-- <div class="row"> -->
-                            <!-- <div class="col-md-4 mb-4">
-                                <div class="bg-image hover-overlay shadow-1-strong rounded" data-mdb-ripple-init
-                                    data-mdb-ripple-color="light">
-                                    <img src="images/bethanys-apple-pie.png" class="img-fluid"/>
-                                    <a href="#!">
-                                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                                    </a>
+                <!--Main layout-->
+                <main class="my-5">
+                    <div class="container">
+                        <section class="text-center text-md-start">
+                            <h1 class="mb-5"><strong>My Projects</strong></h1>
+                
+                            <!-- Post -->
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="bg-image hover-overlay shadow-1-strong rounded" data-mdb-ripple-init
+                                        data-mdb-ripple-color="light">
+                                        <img src="images/user-mgmt-react.png" class="img-fluid"/>
+                                        <a href="./Projects/user-management-app/dist/index.html" rel="nofollow" target="_blank">
+                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                        </a>
+                                    </div>
                                 </div>
+                
+                                <div class="col-md-8 mb-4">
+                                    <h3 class="mt-2"><strong>User Managment App</strong></h3>
+                                    <p>
+                                        A responsive and mobile-first user management app built with React and Material UI. 
+                                        This app allows CRUD operations on user data, including creating, reading, updating, and deleting users.
+                                        It features a user-friendly interface and is designed to be intuitive and easy to navigate.
+                                    </p>
+                                    <a href="./Projects/user-management-app/dist/index.html" 
+                                        class="btn btn-primary" data-mdb-ripple-init rel="nofollow" target="_blank">View
+                                    </a>
+                                    <!-- <button type="button" class="btn btn-primary" data-mdb-ripple-init>Read</button> -->
+                                </div>
+                            </div>
+
+                            <!-- Post -->
+                            <!-- <div class="row"> -->
+                                <!-- <div class="col-md-4 mb-4">
+                                    <div class="bg-image hover-overlay shadow-1-strong rounded" data-mdb-ripple-init
+                                        data-mdb-ripple-color="light">
+                                        <img src="images/bethanys-apple-pie.png" class="img-fluid"/>
+                                        <a href="#!">
+                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                        </a>
+                                    </div>
+                                </div> -->
+                
+                                <!-- <div class="col-md-8 mb-4">
+                                    <h3 class="mt-2"><strong>Bethany's Pie Shop: A Personal Training Project</strong></h3>
+                                    <p>
+                                        A responsive and mobile-first website built following Gill Cleeren's Pluralsight course, 
+                                        "Bootstrap 4: Getting Started." This website simulates an online pie shop where users
+                                        can browse pies and learn more about the business.
+                                    </p>
+                                    <a href="./Projects/bethanys-pie-shop/" 
+                                        class="btn btn-primary" data-mdb-ripple-init rel="nofollow" target="_blank">View
+                                    </a> -->
+                                    <!-- <button type="button" class="btn btn-primary" data-mdb-ripple-init>Read</button> -->
+                                <!-- </div>
                             </div> -->
-            
-                            <!-- <div class="col-md-8 mb-4">
-                                <h3 class="mt-2"><strong>Bethany's Pie Shop: A Personal Training Project</strong></h3>
-                                <p>
-                                    A responsive and mobile-first website built following Gill Cleeren's Pluralsight course, 
-                                    "Bootstrap 4: Getting Started." This website simulates an online pie shop where users
-                                    can browse pies and learn more about the business.
-                                </p>
-                                <a href="./Projects/bethanys-pie-shop/" 
-                                    class="btn btn-primary" data-mdb-ripple-init rel="nofollow" target="_blank">View
-                                </a> -->
-                                <!-- <button type="button" class="btn btn-primary" data-mdb-ripple-init>Read</button> -->
-                            <!-- </div>
-                        </div> -->
-            
-                        <!-- Post -->
-                        <div class="row">
-                            <div class="col-md-4 mb-4">
-                                <div class="bg-image hover-overlay shadow-1-strong rounded" data-mdb-ripple-init
-                                    data-mdb-ripple-color="light">
-                                    <img src="images/hummer-wireframes.png" class="img-fluid" />
-                                    <a href="#!">
-                                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                
+                            <!-- Post -->
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="bg-image hover-overlay shadow-1-strong rounded" data-mdb-ripple-init
+                                        data-mdb-ripple-color="light">
+                                        <img src="images/hummer-wireframes.png" class="img-fluid" />
+                                        <a href="#!">
+                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                
+                                <div class="col-md-8 mb-4">
+                                    <h3 class="mt-2"><strong>Hummer: A UI/UX Case Study</strong></h3>
+                                    <p>
+                                        A music rating and reviewing app created as a UI/UX case study through the Creative Labs
+                                        Program, under Rutgers Creative Expressions Publications. This app is an intuitively 
+                                        designed and visually engaging platform that allows users to rate, review, and discover 
+                                        their favorite songs and artists.
+                                    </p>
+
+                                    <a href="https://www.figma.com/proto/p7vG1uezZwYnQsNXKjJKWc/2blue-lofi-wireframe?type=design&node-id=265-7293&t=yFrLY0TuYU0N5gOb-1&scaling=scale-down&page-id=138%3A3038&starting-point-node-id=265%3A7293&show-proto-sidebar=1&mode=design" 
+                                        class="btn btn-primary" data-mdb-ripple-init rel="nofollow" target="_blank">View
                                     </a>
+                                    <a href="https://www.youtube.com/watch?v=_JKfvgXY9XM&t=138s" 
+                                        class="btn btn-primary" data-mdb-ripple-init rel="nofollow" target="_blank">Presentation
+                                    </a>
+                                    <!-- <button type="button" class="btn btn-primary" data-mdb-ripple-init>Read</button> -->
                                 </div>
                             </div>
-            
-                            <div class="col-md-8 mb-4">
-                                <h3 class="mt-2"><strong>Hummer: A UI/UX Case Study</strong></h3>
-                                <p>
-                                    A music rating and reviewing app created as a UI/UX case study through the Creative Labs
-                                    Program, under Rutgers Creative Expressions Publications. This app is an intuitively 
-                                    designed and visually engaging platform that allows users to rate, review, and discover 
-                                    their favorite songs and artists.
-                                </p>
-
-                                <a href="https://www.figma.com/proto/p7vG1uezZwYnQsNXKjJKWc/2blue-lofi-wireframe?type=design&node-id=265-7293&t=yFrLY0TuYU0N5gOb-1&scaling=scale-down&page-id=138%3A3038&starting-point-node-id=265%3A7293&show-proto-sidebar=1&mode=design" 
-                                    class="btn btn-primary" data-mdb-ripple-init rel="nofollow" target="_blank">View
-                                </a>
-                                <a href="https://www.youtube.com/watch?v=_JKfvgXY9XM&t=138s" 
-                                    class="btn btn-primary" data-mdb-ripple-init rel="nofollow" target="_blank">Presentation
-                                </a>
-                                <!-- <button type="button" class="btn btn-primary" data-mdb-ripple-init>Read</button> -->
-                            </div>
-                        </div>
-                    </section>
-                    <!--Section: Content-->
-            
-                    <!-- Pagination -->
-                    <!-- <nav class="my-4" aria-label="...">
-                        <ul class="pagination pagination-circle justify-content-center">
-                            <li class="page-item">
-                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item active" aria-current="page">
-                                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
-                            </li>
-                        </ul>
-                    </nav> -->
-                </div>
-            </main>
-            <!--Main layout-->
-        </div>
-
-        <!--Footer-->
-        <footer class="bg-opaque text-lg-start">
-            <div class="text-center py-4 align-items-center">
-                <p class="footer-text">Let's connect!</p>
-                <a href="https://www.linkedin.com/in/vivian-zhao-a69430264/" class="footer-btn" role="button"
-                    rel="nofollow" data-mdb-ripple-init target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/vivian1zhao" class="footer-btn" role="button" rel="nofollow"
-                    data-mdb-ripple-init target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
+                        </section>
+                        <!--Section: Content-->
+                
+                        <!-- Pagination -->
+                        <!-- <nav class="my-4" aria-label="...">
+                            <ul class="pagination pagination-circle justify-content-center">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active" aria-current="page">
+                                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav> -->
+                    </div>
+                </main>
+                <!--Main layout-->
             </div>
-        </footer>
-    </div>
+
+            
+            <!--Footer-->
+            <footer class="bg-opaque text-lg-start">
+                <div class="text-center py-4 align-items-center">
+                    <p class="footer-text">Let's connect!</p>
+                    <a href="https://www.linkedin.com/in/vivian-zhao-a69430264/" class="footer-btn" role="button"
+                        rel="nofollow" data-mdb-ripple-init target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/vivian1zhao" class="footer-btn" role="button" rel="nofollow"
+                        data-mdb-ripple-init target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <!-- For blurred background: -->
+    <script src="js/main.js"></script> 
 
     <!-- JQuery reference -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

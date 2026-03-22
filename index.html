@@ -18,102 +18,110 @@
 </head>
 
 <body>
-    <div class="my-container">
-        <div class="content">
-            <header>
-                <!-- Navbar -->
-                <nav class="navbar navbar-expand-lg navbar-light bg-opaque">
-                    <div class="container-fluid">
-                        <!-- Navbar brand -->
-                        <a class="navbar-brand" href="index.html"> <!-- target="_blank" for new tab-->
-                            <img src="images/VZ-Logo-revised.png" width="32" height="32"
-                                class="d-inline-block align-top" alt="VZ Logo"
-                                loading="lazy" />
-                        </a>
+    <!-- Animated circle background -->
+    <section class="hero">
+        <canvas id="canvas" width="500" height="500"></canvas>
 
-                        <!-- Toggle button for when not enough space -->
-                        <button class="navbar-toggler" type="button" data-mdb-collapse-init
-                            data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <i class="fas fa-bars"></i>
-                        </button>
+        <div class="my-container">
+            <div class="content">
+                <header>
+                    <!-- Navbar -->
+                    <nav class="navbar navbar-expand-lg navbar-light bg-opaque">
+                        <div class="container-fluid">
+                            <!-- Navbar brand -->
+                            <a class="navbar-brand" href="index.html"> <!-- target="_blank" for new tab-->
+                                <img src="images/VZ-Logo-revised.png" width="32" height="32"
+                                    class="d-inline-block align-top" alt="VZ Logo"
+                                    loading="lazy" />
+                            </a>
 
-                        <!-- Collapsible elements under this div -->
-                        <div class="collapse navbar-collapse" id="navbarExample01">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item active">
-                                    <a class="nav-link nav-font" aria-current="page" href="index.html">Home</a>
-                                </li>
-                                <!-- <li class="nav-item">
-                                    <a class="nav-link nav-font" href="about.html">About</a>
-                                </li> -->
-                                <li class="nav-item">
-                                    <a class="nav-link nav-font" href="projects.html">Projects</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link nav-font" href="resume.html">Resume</a>
-                                </li>
-                                <!-- <li class="nav-item">
-                                    <a class="nav-link nav-font" href="contact.html">Contact</a>
-                                </li> -->
-                            </ul>
-                            <ul class="navbar-nav d-flex flex-row">
-                                <!-- Icons -->
-                                <li class="nav-item me-3 me-lg-0">
-                                    <a class="nav-link" href="https://www.linkedin.com/in/vivian-zhao-a69430264/"
-                                        rel="nofollow" target="_blank">
-                                        <i class="fab fa-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li class="nav-item me-3 me-lg-0">
-                                    <a class="nav-link" href="https://github.com/vivian1zhao" rel="nofollow"
-                                        target="_blank">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </li>
-                            </ul>
+                            <!-- Toggle button for when not enough space -->
+                            <button class="navbar-toggler" type="button" data-mdb-collapse-init
+                                data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                            </button>
+
+                            <!-- Collapsible elements under this div -->
+                            <div class="collapse navbar-collapse" id="navbarExample01">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item active">
+                                        <a class="nav-link nav-font" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                    <!-- <li class="nav-item">
+                                        <a class="nav-link nav-font" href="about.html">About</a>
+                                    </li> -->
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-font" href="projects.html">Projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-font" href="resume.html">Resume</a>
+                                    </li>
+                                    <!-- <li class="nav-item">
+                                        <a class="nav-link nav-font" href="contact.html">Contact</a>
+                                    </li> -->
+                                </ul>
+                                <ul class="navbar-nav d-flex flex-row">
+                                    <!-- Icons -->
+                                    <li class="nav-item me-3 me-lg-0">
+                                        <a class="nav-link" href="https://www.linkedin.com/in/vivian-zhao-a69430264/"
+                                            rel="nofollow" target="_blank">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item me-3 me-lg-0">
+                                        <a class="nav-link" href="https://github.com/vivian1zhao" rel="nofollow"
+                                            target="_blank">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+                    </nav>
+                    <!-- Navbar -->
+                </header>
+
+                <main class="my-5">
+                    <div class="container">
+                        <section>
+                            <div class="profile-card">
+                                <div>
+                                    <img src="images/square-headshot.jpg" class="profile-img" alt="Vivian Zhao Headshot" />
+                                </div>
+                                <div class="profile-info">
+                                    <h2><strong>Hi, I'm Vivian!</strong><h2>
+                                    <p>
+                                        I’m a Data Science and Computer Science student in the Rutgers Honors College, 
+                                        passionate about applying data, machine learning, and thoughtful analysis to 
+                                        problems that affect real people.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
                     </div>
-                </nav>
-                <!-- Navbar -->
-            </header>
-
-            <main class="my-5">
-                <div class="container">
-                    <section>
-                        <div class="profile-card">
-                            <div>
-                                <img src="images/square-headshot.jpg" class="profile-img" alt="Vivian Zhao Headshot" />
-                            </div>
-                            <div class="profile-info">
-                                <h2><strong>Hi, I'm Vivian!</strong><h2>
-                                <p>
-                                    I’m a Data Science and Computer Science student in the Rutgers Honors College, 
-                                    passionate about applying data, machine learning, and thoughtful analysis to 
-                                    problems that affect real people.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </main>
-        </div>
-
-        <!--Footer-->
-        <footer class="bg-opaque text-lg-start">
-            <div class="text-center py-4 align-items-center">
-                <p class="footer-text">Let's connect!</p>
-                <a href="https://www.linkedin.com/in/vivian-zhao-a69430264/" class="footer-btn" role="button"
-                    rel="nofollow" data-mdb-ripple-init target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/vivian1zhao" class="footer-btn" role="button" rel="nofollow"
-                    data-mdb-ripple-init target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
+                </main>
             </div>
-        </footer>
-    </div>
+
+            <!--Footer-->
+            <footer class="bg-opaque text-lg-start">
+                <div class="text-center py-4 align-items-center">
+                    <p class="footer-text">Let's connect!</p>
+                    <a href="https://www.linkedin.com/in/vivian-zhao-a69430264/" class="footer-btn" role="button"
+                        rel="nofollow" data-mdb-ripple-init target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/vivian1zhao" class="footer-btn" role="button" rel="nofollow"
+                        data-mdb-ripple-init target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <!-- For blurred background: -->
+    <script src="js/main.js"></script> 
 
     <!-- JQuery reference -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

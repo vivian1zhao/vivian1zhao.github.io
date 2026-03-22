@@ -8,11 +8,7 @@ html, body {
 }
 
 body {
-    /* padding-top: 5rem;
-    padding-bottom: 5rem; */
-    background-image: url('/images/blended-background.jpg');
-    /* background: #77b6ea;
-    background: linear-gradient(-20deg, #77b6ea 0%, #fff7db 50%, #fde8e9 100%); */
+    /* background-image: url('/images/blended-background.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh !important;
@@ -198,4 +194,53 @@ footer {
     .profile-card {
         padding: 1.1rem 0.3rem;
     }
+}
+
+
+/* -------------------------------------------------- */
+
+#canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: block;
+}
+
+.hero {
+    height: 100vh;
+    min-height: 30em;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    color: #fff;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+/* Blur overlay */
+body::before {
+    content: "";
+    background: hsla(
+        0, 
+        0%, 
+        48%, /* adjustable */
+        0.25
+    );
+    backdrop-filter: blur(70px);
+    -webkit-backdrop-filter: blur(70px);
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero div {
+    text-align: left;
+    z-index: 1;
 }
