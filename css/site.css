@@ -116,7 +116,7 @@ main.my-5 {
     max-width: 900px;
     width: 100%;
     display: flex;
- 00   flex-wrap: wrap;
+    flex-wrap: wrap;
     align-items: center;
 }
 .profile-img {
