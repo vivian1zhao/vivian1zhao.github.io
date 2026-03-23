@@ -41,8 +41,8 @@ function initCircles() {
         let y = randomBetween(radius, canvas.height - radius);
 
         // Set random velocity on X and Y axes (speed that circle moves)
-        let dx = randomBetween(window.innerWidth / -700, window.innerWidth / 700);
-        let dy = randomBetween(window.innerHeight / -700, window.innerHeight / 700);
+        let dx = randomBetween(window.innerWidth / -500, window.innerWidth / 500);
+        let dy = randomBetween(window.innerHeight / -500, window.innerHeight / 500);
     
         // Assign random color to circle 
         let color = colors[Math.floor(Math.random() * colors.length)];
