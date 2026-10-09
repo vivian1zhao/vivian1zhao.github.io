@@ -34,7 +34,7 @@ function initCircles() {
     // Loop code inside as many times as number of circles
     for (let i = 0; i < circleCount; i++) {
         // Set circle radius
-        let radius = window.innerWidth / 4;
+        let radius = Math.max(65, window.innerWidth / 4);
 
         // Set random circle position inside canvas on X and Y axes: 
         let x = randomBetween(radius, canvas.width - radius);
@@ -52,12 +52,12 @@ function initCircles() {
     }
 }
 
-// Draw the circles with our new values
+// Draw the circles with the new values
 function drawCircle(circle) {
     // Begin circle path
     ctx.beginPath();
 
-    // Create circle with parameters made from earlier
+    // Create circle with parameters from earlier
     ctx.arc(circle.x, circle.y, circle.radius, 0, Math.PI * 2, false);
 
     ctx.fillStyle = circle.color;
@@ -68,7 +68,9 @@ function drawCircle(circle) {
 // Animated function
 function animate() {
     // Create animation by rerunning animate function over and over
-    requestAnimationFrame(animate);
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        requestAnimationFrame(animate);
+    }
     // Clear all previously drawn elements from canvas 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -92,8 +94,8 @@ function animate() {
 
 // Always make canvas fullscreen (a little bigger than entire screen)
 function resizeCanvas() {
-    canvas.width = window.innerWidth * 1.5;
-    canvas.height = window.innerHeight * 1.5;
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 
     // New circle data for new screen size
     initCircles();

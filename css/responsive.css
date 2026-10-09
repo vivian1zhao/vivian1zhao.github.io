@@ -1,0 +1,334 @@
+
+/* responsive refinements - loaded after MDB to keep the desktop design */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-width: 0;
+    overflow-x: clip;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: block;
+}
+
+.my-container {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    min-width: 0;
+}
+
+main.my-5 {
+    width: 100%;
+    min-width: 0;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+}
+
+main.my-5 > .container {
+    min-width: 0;
+}
+
+/* navigation */
+
+.navbar {
+    position: relative;
+    z-index: 10;
+}
+
+.navbar .container-fluid {
+    max-width: 1200px;
+}
+
+.navbar-toggler {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+}
+
+/* homepage */
+
+.profile-card {
+    gap: 0;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.profile-info {
+    min-width: 0;
+}
+
+/* projects */
+
+.projects-container {
+    min-width: 0;
+}
+
+.project-item {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-item-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.project-item-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.project-item-content .btn {
+    margin-bottom: .5rem;
+    white-space: normal;
+}
+
+/* general */
+
+footer {
+    position: relative;
+    z-index: 1;
+}
+
+#canvas {
+    pointer-events: none;
+}
+
+img, iframe, video, embed {
+    max-width: 100%;
+}
+
+/* tablet and smaller screens */
+
+@media (max-width: 991.98px) {
+
+    .navbar .container-fluid {
+        padding-inline: 1rem;
+    }
+
+    .navbar-collapse {
+        padding: .65rem 0 .8rem;
+    }
+
+    .navbar-nav:not(.flex-row) {
+        gap: .15rem;
+    }
+
+    .navbar-nav:not(.flex-row) .nav-link {
+        width: 100%;
+        padding: .65rem .75rem;
+        border-radius: 10px;
+    }
+
+    .navbar-nav:not(.flex-row) .nav-link:hover,
+    .navbar-nav:not(.flex-row) .active .nav-link {
+        background: rgba(38, 85, 94, .08);
+    }
+
+    .navbar-nav.flex-row {
+        gap: 1rem;
+        padding: .4rem .75rem 0;
+    }
+
+    .navbar-nav.flex-row .nav-link {
+        font-size: 1.2rem;
+    }
+
+    .profile-card {
+        justify-content: center;
+    }
+}
+
+/* mobile screens */
+
+@media (max-width: 767.98px) {
+
+    main.my-5 {
+        margin-top: 1.5rem !important;
+        margin-bottom: 2rem !important;
+        align-items: flex-start;
+    }
+
+    body:has(.profile-card) main.my-5 {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem !important;
+    }
+
+    main.my-5 > .container {
+        width: 100%;
+        padding-inline: 1.25rem !important;
+    }
+
+    main.my-5 section > h1 {
+        font-size: clamp(1.8rem, 7vw, 2.35rem);
+        line-height: 1.2;
+        margin-bottom: 1.5rem !important;
+    }
+
+    /* homepage profile */
+
+    .profile-card {
+        max-width: 530px;
+        border-radius: 20px;
+        padding: 1.65rem 1.35rem !important;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: clamp(128px, 39vw, 170px);
+        height: clamp(128px, 39vw, 170px);
+        margin-inline: auto;
+    }
+
+    .profile-info {
+        width: 100%;
+        padding: 1.1rem 0 0;
+    }
+
+    .profile-info h2 {
+        font-size: clamp(1.7rem, 6vw, 2.1rem);
+        line-height: 1.2;
+        margin-bottom: .85rem;
+    }
+
+    .profile-info p {
+        font-size: 1rem;
+        line-height: 1.7;
+        overflow-wrap: anywhere;
+    }
+
+    /* Project cards */
+
+    .projects-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.25rem;
+    }
+
+    .project-item {
+        border-radius: 18px;
+    }
+
+    .project-item-content {
+        padding: 1.25rem !important;
+    }
+
+    .project-item-content h3 {
+        font-size: 1.35rem;
+        line-height: 1.3;
+    }
+
+    .project-item-content p {
+        line-height: 1.65;
+    }
+
+    .project-item-content .btn {
+        min-height: 42px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* resume */
+
+    .resume-preview {
+        width: 100% !important;
+        max-width: 680px !important;
+    }
+
+    .resume-actions,
+    .resume-actions p {
+        text-align: center !important;
+    }
+
+    /* about page */
+
+    .about-copy {
+        padding-inline: .5rem !important;
+    }
+
+    /* footer */
+
+    footer {
+        padding: 10px 12px;
+    }
+
+    footer .py-4 {
+        padding-block: .85rem !important;
+    }
+}
+
+/* small mobile screens */
+
+@media (max-width: 380px) {
+
+    main.my-5 > .container {
+        padding-inline: .9rem !important;
+    }
+
+    .profile-card {
+        padding: 1.35rem .95rem !important;
+    }
+
+    .project-item-content {
+        padding: 1rem !important;
+    }
+
+    .project-item-content .btn {
+        margin-right: .25rem;
+    }
+}
+
+/* accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .profile-info h2 {
+        text-align: center;
+    }
+
+    .profile-info p {
+        text-align: left;
+        padding-inline: clamp(0.5rem, 4vw, 2.5rem);
+    }
+}
